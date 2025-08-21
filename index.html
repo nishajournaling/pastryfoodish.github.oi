@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nishnush Pastry — Kue hangat setiap hari</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="images/logo.svg" alt="Nishnush Pastry logo" class="logo">
+      <div>
+        <h1>Nishnush Pastry</h1>
+        <p class="tag">Kue hangat setiap hari dari oven kami dengan senyummu</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="about.html">About</a>
+      <button id="openCart" class="cart-btn">🛒 <span id="cartCount">0</span></button>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero card">
+    <div class="hero-left">
+      <h2>Selamat datang di Nishnush Pastry</h2>
+      <p class="lead">Rasakan kue hangat kami — dibuat setiap hari dengan bahan pilihan. Pilih, pesan, ambil, dan nikmati!</p>
+      <div class="cta">
+        <a class="btn primary" href="produk.html">Lihat Produk</a>
+        <button class="btn outline" id="waOrder">Pesan Sekarang</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="images/croissant.png" alt="croissant" class="hero-img">
+    </div>
+  </section>
+
+  <section class="bestseller card">
+    <h3>🔥 Produk Terlaris</h3>
+    <div class="grid products" id="homeProducts">
+      <!-- JS will inject some popular products -->
+    </div>
+  </section>
+
+  <section class="testimonials card">
+    <h3>💬 Testimoni</h3>
+    <div class="grid testGrid">
+      <blockquote>“Croissant-nya ser-ser renyah, dalemnya lembut!” — <strong>Anisa</strong></blockquote>
+      <blockquote>“Donutnya pas manisnya, anak-anak suka.” — <strong>Dika</strong></blockquote>
+      <blockquote>“Tart buah seger, krimnya ringan. Repeat order!” — <strong>Mutiara</strong></blockquote>
+    </div>
+  </section>
+
+  <section class="feedback card">
+    <h3>📝 Kritik & Saran</h3>
+    <form id="feedbackForm">
+      <input name="name" placeholder="Nama Anda" required>
+      <input name="email" type="email" placeholder="email@contoh.com">
+      <textarea name="message" placeholder="Tulis masukan..."></textarea>
+      <div class="row right">
+        <button type="reset" class="btn outline">Bersihkan</button>
+        <button type="submit" class="btn primary">Kirim</button>
+      </div>
+      <p class="muted" id="feedbackStatus"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row between">
+      <div>📍 Bekasi, Bantargebang, Jln Narogong</div>
+      <div>© 2025 Nishnush Pastry</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart Drawer -->
+<dialog id="cartDrawer" class="cart-drawer">
+  <form method="dialog" class="drawer-card">
+    <h3>🛒 Keranjang</h3>
+    <div id="cartItems"></div>
+    <div class="row between" style="margin-top:12px;">
+      <strong>Total: <span id="cartTotal">Rp0</span></strong>
+      <div>
+        <button id="clearCart" class="btn outline">Kosongkan</button>
+        <button id="checkoutBtn" class="btn primary">Checkout</button>
+      </div>
+    </div>
+    <menu>
+      <button class="btn outline">Tutup</button>
+    </menu>
+  </form>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
