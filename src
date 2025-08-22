@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="hero-right">
-      <img src="img/croissant.jpg.jpeg" alt="croissant" class="hero-img">
+      <img src="img/croissant.jp.jpeg" alt="croissant" class="hero-img">
     </div>
   </section>
 
@@ -59,7 +59,7 @@
   <section class="feedback card">
     <h3>📝 Kritik & Saran</h3>
     <form id="feedbackForm">
-      <input name="name" placeholder="Nama Anda" required>
+      <input name="name" placeholder="Nishnush" required>
       <input name="email" type="email" placeholder="email@contoh.com">
       <textarea name="message" placeholder="Tulis masukan..."></textarea>
       <div class="row right">
@@ -74,7 +74,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="row between">
-      <div>📍 Bekasi, Bantargebang, Jln Narogong</div>
+      <div>📍 Bekasi, Bantargebang, Jln Narogong,blok 23</div>
       <div>© 2025 Nishnush Pastry</div>
     </div>
   </div>
